@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const webpack = require('webpack')
 
 const projectPath = process.cwd();
 const entry = './client/src/index.js';
@@ -9,7 +9,10 @@ const title = '标题';
 const templatePath = './build/template.html'
 
 module.exports = {
-    entry: path.resolve(projectPath, entry),
+    entry: [
+        path.resolve(projectPath, entry),
+        'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true&noInfo=true',
+    ],
     devtool,
     mode: 'development',
     output: {
@@ -21,7 +24,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title,
             template: templatePath,
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin(),
     ],
     module: {
         rules: [
