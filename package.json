@@ -1,0 +1,34 @@
+{
+  "name": "auto_order_meican",
+  "version": "1.0.0",
+  "description": "美餐系统随机点餐，每周点餐很麻烦，于是想到搞个项目处理这种场景，也顺便学习react、框架搭建、node、puppeter、网络相关知识吧。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./build/devServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnWang0930/auto_order_meican.git"
+  },
+  "author": "wzhen0930@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnWang0930/auto_order_meican/issues"
+  },
+  "homepage": "https://github.com/JohnWang0930/auto_order_meican#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-react-jsx": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-dev-middleware": "^3.7.2"
+  }
+}
