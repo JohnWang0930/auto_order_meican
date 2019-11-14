@@ -22,6 +22,7 @@
                 "libraryName": "antd",
                 "style": "css"
               }
-        ]
+        ],
+        "transform-class-properties"
     ]
 }

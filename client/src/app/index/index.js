@@ -1,22 +1,16 @@
 import React from 'react';
 import s from './style.scss';
-import {  Icon, Input, Button } from 'antd';
+import { Calendar } from 'antd';
+
 
 export default class Index extends React.Component {
+    onPanelChange=(value, mode)=>{
+        console.log(value, mode);
+    }
     render() {
         return (
             <React.Fragment>
-                <Input
-                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                    placeholder="Usersname" />
-                <Input
-                    prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                    type="password"
-                    placeholder="Password" />
-                <Button type="primary" htmlType="submit" className="login-form-button">
-                    Log in
-                </Button>
-                <div className={s.test}>sadas</div>
+                <Calendar onPanelChange={this.onPanelChange} />
             </React.Fragment>
         );
     }
