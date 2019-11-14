@@ -18,16 +18,25 @@
   },
   "homepage": "https://github.com/JohnWang0930/auto_order_meican#readme",
   "dependencies": {
+    "antd": "^3.25.1",
     "express": "^4.17.1",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-transform-react-jsx": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.2",
+    "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0"

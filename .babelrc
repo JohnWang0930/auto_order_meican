@@ -15,6 +15,13 @@
         ]
     ],
     "plugins": [
-        "@babel/plugin-transform-react-jsx"
+        "@babel/plugin-transform-react-jsx",
+        [
+            "import", 
+            {
+                "libraryName": "antd",
+                "style": "css"
+              }
+        ]
     ]
 }
